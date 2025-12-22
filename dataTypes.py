@@ -133,4 +133,30 @@ print(type (my_var_8)) # <class 'dict'>
 print(type (my_var_9)) # <class 'set'>
 print(type (my_var_10)) # <class 'range'>
 
+# isinstance() function is used to check if a variable is of a specific type , and return True or False (boolean)
 
+print(isinstance(my_var_1, str)) # True
+print(isinstance(my_var_1, int)) # False
+
+# print(isinstance(true, bool)) # name error because true is not a variable, it is a keyword
+
+
+# type hinting in python is a way to specify the type of a variable
+
+def add(a: int, b: int) -> int:
+    return a + b
+
+print(add(1, 2)) # 3
+print(add(1, 2.0)) # type error because 2.0 is not an integer
+print(add(1, "2")) # type error because "2" is not an integer
+print(add(1, True)) # type error because True is not an integer
+print(add(1, None)) # type error because None is not an integer
+print(add(1, [1, 2, 3])) # type error because [1, 2, 3] is not an integer
+
+# type hinting is not mandatory, it is just a way to specify the type of a variable
+# it is used to help the developer to understand the code better
+
+user_name: str = "John Doe"
+user_age: int = 20
+
+add(user_name, user_age) # won't give you squiggly lines in vscode but it will give you type error at runtime
