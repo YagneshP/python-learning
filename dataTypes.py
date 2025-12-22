@@ -83,3 +83,54 @@ print(range_variable)
 # 2. immutable means that the numbers cannot be changed
 # 3. can contain duplicate numbers
 # 4. can be nested
+
+# List variable
+# List is a collection of ordered and mutable elements
+list_variable = [1, 2, 3, 4, 5]
+list_variable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # here you reassigned the value of list_variable variable
+list_variable = [2,1,6,5,2]
+list_variable = ["2", 1, {"name": "John", "age": 20}]
+list_variable[0] = 100 # here you changed the value of the first element from "2" to 100
+print(list_variable)
+
+# characteristics of list
+# 1. ordered means that the elements are in a specific order
+
+
+# None variable
+# None is a special value that represents no value
+none_variable = None
+print(none_variable)
+
+
+greeting_message = "Hello, World!"
+
+# greeting_message[0] = 'h' # here you tried to change the value of the first element from 'H' to 'h', but it will raise an error because string is immutable
+print(greeting_message)
+
+
+
+# type() function is used to get the type of a variable
+
+my_var_1 = 'Hello world'
+my_var_2 = 21
+my_var_3 = 21.0
+my_var_4 = True
+my_var_5 = None
+my_var_6 = [1, 2, 3, 4, 5]
+my_var_7 = (1, 2, 3, 4, 5)
+my_var_8 = {1: 'one', 2: 'two', 3: 'three'}
+my_var_9 = {1, 2, 3, 4, 5}
+my_var_10 = range(10)
+
+print(type(my_var_1)) # <class 'str'>
+print(type (my_var_2)) # <class 'int'>
+print(type (my_var_3)) # <class 'float'>
+print(type (my_var_4)) # <class 'bool'>
+print(type (my_var_5)) # <class 'NoneType'>
+print(type(my_var_6)) # <class 'list'>
+print(type (my_var_8)) # <class 'dict'>
+print(type (my_var_9)) # <class 'set'>
+print(type (my_var_10)) # <class 'range'>
+
+
