@@ -7,3 +7,4 @@ Journey of python learning
 - Dynamically-typed language (like JS)
 - not required to explicitly declare type of a variable
 - Python determine data types while running a program
+- `type error` can be reveal when python executing (running) a program
