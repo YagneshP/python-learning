@@ -14,3 +14,5 @@ Journey of python learning
 [dataTypes.py]()
 
 - In Python all data treated as Object, some of them are mutable and other are immutable.
+
+## strings in python
