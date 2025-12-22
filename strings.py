@@ -91,3 +91,26 @@ print(my_str[-1]) # print last character from the string 'd'
 print(my_str[-2]) # print second last character from the string 'l'
 
 # if you -12 or 12 you will get the IndexError
+
+# String slicing
+
+# string[start:stop] - start index included , stop index not included
+
+my_str = 'Hello World'
+first_five_chars = my_str[0:6]
+print(first_five_chars)
+print(my_str[2:6])
+print(my_str[0:4]) # start from 0 index 
+print(my_str[:4]) # this also start from 0 index
+print(my_str[:]) # This will output whole string
+print(my_str[4:]) # This will start from index 4 till end of the string
+
+#string[start:stop:step]
+
+print(my_str[1:6:2]) # extract every second char from index 1
+
+
+# A helpful trick you can do with the step parameter is to reverse a string by setting step to -1, and leaving start and stop blank:
+
+my_str = 'Hello world'
+print(my_str[::-1]) # dlrow olleH
