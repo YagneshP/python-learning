@@ -114,3 +114,56 @@ print(my_str[1:6:2]) # extract every second char from index 1
 
 my_str = 'Hello world'
 print(my_str[::-1]) # dlrow olleH
+
+
+# To check if character or set of characters exist in string use 'in'
+
+my_str = "hello world"
+
+print("h" in my_str) #  True
+print("hello" in my_str) #True
+print("f" in my_str) # False
+
+
+# Different method for string
+
+# upper() - new string with all characters with uppercase
+
+my_str = "hello"
+
+new_str = my_str.upper()
+
+# lower() - return new string all lowercase characters
+
+lowercase_str = new_str.lower()
+
+# strip() - return new string with specified leading and trailing characters removed.
+# if no argument passed it removes trailing and leading whitespace
+
+my_str = '  hello world '
+without_space_str = my_str.strip()
+
+# replace(old, new) - return new string with all occurrence of `old` replaced by 'new'
+
+my_str = 'hello world'
+
+replaced_str = my_str.replace('hello', 'hi')
+
+
+# split() - split string into list of string with specified 'separator' , if no separator provided will separate string with whitespace
+
+my_str = 'Hello World'
+split_str_list = my_str.split()
+print(split_str_list)
+
+# join element of list with join() and separator
+
+my_str_list = ["hello", "world"]
+joined_str = ' '.join(my_str_list) 
+
+
+# startswith(prefix) - return boolean if string start with provided prefix
+
+my_str = "hello world"
+
+print(my_str.startswith('hello')) # True
