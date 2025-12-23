@@ -1,4 +1,7 @@
 # with single quote
+from re import M
+
+
 single_quote_string = 'Hello, World!'
 
 # with double quote
@@ -167,3 +170,39 @@ joined_str = ' '.join(my_str_list)
 my_str = "hello world"
 
 print(my_str.startswith('hello')) # True
+
+# endswith(suffix) - return bool if string ends with suffix
+
+print(my_str.endswith('world')) #True
+
+# find(substring) - return index of [first occurrence] of 'substring' or '-1' if not there
+
+my_str = "hell0 world"
+world_index = my_str.find('world') # return 6 and assigned to 'variable'
+
+# count(substring) - return number of times substring appear in string if not then '0'
+
+o_count = my_str.count('o')
+print(o_count)
+
+
+# capitalize - return a new string with 'first' character capitalized
+
+my_str = 'hello world'
+
+capital_str = my_str.capitalize()
+
+
+# isupper - return True if all letters string and False if not
+
+my_str = 'hello world'
+
+is_all_upper = my_str.isupper()
+
+# islower - return True if all lowercase chars, False if not
+
+is_all_lower = my_str.islower()
+
+# title() - new string with each word with first letter Capitalized
+
+title_str = my_str.title() # Hello World
