@@ -16,3 +16,7 @@ Journey of python learning
 - In Python all data treated as Object, some of them are mutable and other are immutable.
 
 ## strings in python
+
+check [strings.py]() more details and examples
+
+## Numbers and Mathematical operations
