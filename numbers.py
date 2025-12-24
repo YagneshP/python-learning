@@ -73,3 +73,11 @@ result_1 = 10 // 3 # => 3
 
 # Explanation #
 # The result of dividing 10 by 3 is 3.333...., but floor division returns the largest integer less than or equal to the result. Therefore, the result is 3.
+
+# Exponentiation - raise number to the 'power' of another 
+# that is done with double asterisk ( ** )
+
+base = 5
+power = 2
+exp_result = base ** power ## 5^4
+print(exp_result)
