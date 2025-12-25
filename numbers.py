@@ -81,3 +81,21 @@ base = 5
 power = 2
 exp_result = base ** power ## 5^4
 print(exp_result)
+
+# python also provide float(), int() - to convert string and number to specific type
+
+my_int = 1
+my_float = float(my_int) # 1.0
+print(type(my_float)) # <class 'float'>
+
+my_int_str = '1.2'
+my_int = float(my_int_str) # you can not use int here 
+print(my_int)
+print(int(my_int)) # 1
+
+
+# round() - return nearest `Integer` by default , if specified decimal number then it returns to round that decimal number
+
+my_float = 12.45
+round_int = round(my_float)
+print(round_int)
