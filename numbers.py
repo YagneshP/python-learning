@@ -105,3 +105,10 @@ print(round_int)
 num = -14
 absolute_num = abs(num)
 print(absolute_num)
+
+# pow() - raises number to the power of another number
+# perform modulus exponentiation
+
+print(pow(2*3)) # 2^3  similar like 2 ** 3
+
+pow(2, 3, 5) # modulus exponentiation ( use chatGPT)
