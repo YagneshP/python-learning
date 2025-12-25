@@ -99,3 +99,9 @@ print(int(my_int)) # 1
 my_float = 12.45
 round_int = round(my_float)
 print(round_int)
+
+# absolute value - modulus operator || - distance from zero 
+# with abs()
+num = -14
+absolute_num = abs(num)
+print(absolute_num)
