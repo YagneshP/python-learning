@@ -112,3 +112,31 @@ print(absolute_num)
 print(pow(2*3)) # 2^3  similar like 2 ** 3
 
 pow(2, 3, 5) # modulus exponentiation ( use chatGPT)
+
+
+# augmented assignment  - binary operation and assignment in one step
+# takes a variable do operation with another value and assign the result of that operation to variable
+
+# variable <operator>= another_value
+
+# += (add and assign)
+# -= (sub and assign)
+# *= (multiplication and assign)
+# /= (divide and assign)
+# //= (floor division and assign)
+# %= (modulo and assign)
+# **= (power and assign)
+
+# concatenate string with += 
+greet = 'Hello'
+greet += ' World'
+
+# repeating string with multiplication operator
+
+greet = 'hello'
+greet *= 3 # hellohellohello
+
+# other operator can not be used with string You will get a type error
+
+
+# ++ and -- don't work in python  
