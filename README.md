@@ -20,3 +20,9 @@ Journey of python learning
 check [strings.py]() more details and examples
 
 ## Numbers and Mathematical operations
+
+check [numbers.py]() for more details and examples
+
+## condition statement and logical operator
+
+conditional statement let you control the flow of program
