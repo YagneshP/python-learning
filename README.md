@@ -26,3 +26,5 @@ check [numbers.py]() for more details and examples
 ## condition statement and logical operator
 
 conditional statement let you control the flow of program
+
+## function in python
