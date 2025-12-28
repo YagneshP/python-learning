@@ -47,3 +47,16 @@
 # if first falsy return first
 # if first truthy return second
 
+
+## "or" also known as short-circuit operator
+
+# can take two operands 
+# if first truthy return true
+# else return second value
+
+
+## 'not' takes single operand and return boolean value
+# covert truthy value to False and falsy to True
+# ! same in js
+
+
