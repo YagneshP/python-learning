@@ -17,7 +17,7 @@ Journey of python learning
 
 ## strings in python
 
-check [strings.py]() more details and examples
+check [strings.py](https://github.com/YagneshP/python-learning/blob/main/strings.py) more details and examples
 
 ## Numbers and Mathematical operations
 
