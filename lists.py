@@ -49,3 +49,19 @@ next_js_skill = "nextJs" in skills
 
 print('react skill', react_skill) # should print react skill False
 print('nextJs skill', next_js_skill) # should print nextJs skill True
+
+## how to access the element from nested list
+
+nested_element = skills[-1][0]
+print('nested element is: ',nested_element)
+
+# Unpacking value from the list (like destructure)
+
+name , title = developer
+print(name, title)
+
+# if you need to collect any remaining elements from the list , use (*) asterisk operator
+
+top_language, *rest = skills # rest will be remaining items list
+print('top language', top_language)
+print('other skills', rest)
