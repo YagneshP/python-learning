@@ -28,3 +28,9 @@ print(list(element_0)) # convert string in to list and should print ---> ['j', '
 
 print(len(list(element_0))) # should print 10 , here we convert first element which is string 'javascript' in to list and finding total number element of that list 
 
+# List are mutable so you can update a value (element) at particular index
+# if you any out of bound index(positive or negative) for particular list it gives 'IndexError'
+
+skills[1] = 'nextJs' # here we are changing second element value from 'react' to 'nextJs'
+
+print(skills) # should print ['javascript', 'nextJs', 'python', ['css', 'scss', 1]]
