@@ -90,3 +90,23 @@ print('skills before append :', skills)
 skills.append('react')
 print('skills after append :', skills)
 
+# you can append the list in the list like this:
+print("---- appending a list into list ----")
+
+print('skills before appending list :', skills)
+new_skills = ["sql", "vue", "angular"]
+skills.append(new_skills)
+print('skills after appending list :', skills)
+
+
+# extend() -- add all individual element of the different list
+
+print("---- extending skills by adding individual elements of new_skills----")
+print('skills before extend with "new_skills" elements :', skills)
+skills.extend(new_skills)
+print('skills after extend with "new_skills" elements :', skills) # should print has new_skills list and also individual members
+
+
+
+
+
