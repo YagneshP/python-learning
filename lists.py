@@ -100,11 +100,21 @@ print('skills after appending list :', skills)
 
 
 # extend() -- add all individual element of the different list
-
-print("---- extending skills by adding individual elements of new_skills----")
+print("===== extend() ========= ")
+print("---- extending skills by adding individual elements of new_skills ----")
 print('skills before extend with "new_skills" elements :', skills)
 skills.extend(new_skills)
 print('skills after extend with "new_skills" elements :', skills) # should print has new_skills list and also individual members
+
+# insert() - to add element at particular index
+# can take two argument - first : index, second: element
+# list.insert(2, 'some value')
+
+print(" ===== insert() ======")
+print(" ---- inserting an element at particular index ----")
+print('skills before inserting an element :', skills)
+skills.insert(1, 'HTML')
+print('skills after inserting an element :', skills)
 
 
 
