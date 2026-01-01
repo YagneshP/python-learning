@@ -117,6 +117,17 @@ skills.insert(1, 'HTML')
 print('skills after inserting an element :', skills)
 
 
+# remove() - remove an element from the list
+# take value of element as argument 
+# only remove first occurrence
+
+print(" ====== remove() ======= ")
+print(' ----- removing an element from the list ----- ')
+print(' skills before removing an element', skills)
+skills.remove(new_skills)
+print(' skills after removing an element', skills)
+
+
 
 
 
