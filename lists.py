@@ -65,3 +65,18 @@ print(name, title)
 top_language, *rest = skills # rest will be remaining items list
 print('top language', top_language)
 print('other skills', rest)
+
+# ValueError - if you assign more variable than number of elements in the list
+# name, age, title = developer # gives error ValueError: not enough values to unpack
+
+# Slice in List - you can get portion of the list by slicing it
+
+my_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# lets get the number from index 1 to 5
+small_portion = my_numbers[1:6] # include start index not the last index
+print(small_portion)
+
+# lets use the step for slicing
+even_numbers = my_numbers[1::2] # notice here we are not including last index because we want to go the rest of the list elements
+print(even_numbers)
