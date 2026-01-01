@@ -127,6 +127,16 @@ print(' skills before removing an element', skills)
 skills.remove(new_skills)
 print(' skills after removing an element', skills)
 
+# pop() - to remove element from particular index
+# provide the index of an element to remove - pop(4)
+# if no index provide it remove last element from the list
+
+print(" ====== pop() ======= ")
+print(' ----- popping / removing an element from the list from particular index ----- ')
+print(' skills before popping an element', skills)
+skills.pop(-5)
+print(' skills after removing an element', skills)
+
 
 
 
