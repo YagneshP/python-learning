@@ -80,3 +80,13 @@ print(small_portion)
 # lets use the step for slicing
 even_numbers = my_numbers[1::2] # notice here we are not including last index because we want to go the rest of the list elements
 print(even_numbers)
+
+
+### ---- some useful method for list ---- ###
+
+## append() - add element at the end of list
+print('----- append method ------')
+print('skills before append :', skills)
+skills.append('react')
+print('skills after append :', skills)
+
