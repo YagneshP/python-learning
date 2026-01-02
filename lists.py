@@ -166,3 +166,23 @@ unsorted_numbers = [ 4, 38, 12, 9, -3, 4, 2, 67]
 print(" unsorted_numbers before sorted() :", unsorted_numbers)
 sorted_numbers = sorted(unsorted_numbers)
 print(" unsorted_numbers after sorted() which return new iterable object sorted_numbers:", sorted_numbers)
+
+
+
+### reverse() - reverse elements of the list
+
+print(" ======= reverse() ========")
+reverse_list = ["n", "o", "h", "t", "y", "P"]
+print("reverse_list before reverse() :", reverse_list)
+reverse_list.reverse()
+print("reverse_list after reverse() :", reverse_list)
+
+
+
+### index() -- find the first index of element found in list
+
+print(" ====== index() ======== ")
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+print(" finding Java in list")
+java_at = programming_languages.index('Java')
+print("Java at",java_at, "index in list")
