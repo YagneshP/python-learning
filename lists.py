@@ -99,14 +99,14 @@ skills.append(new_skills)
 print('skills after appending list :', skills)
 
 
-# extend() -- add all individual element of the different list
+### extend() -- add all individual element of the different list
 print("===== extend() ========= ")
 print("---- extending skills by adding individual elements of new_skills ----")
 print('skills before extend with "new_skills" elements :', skills)
 skills.extend(new_skills)
 print('skills after extend with "new_skills" elements :', skills) # should print has new_skills list and also individual members
 
-# insert() - to add element at particular index
+### insert() - to add element at particular index
 # can take two argument - first : index, second: element
 # list.insert(2, 'some value')
 
@@ -117,7 +117,7 @@ skills.insert(1, 'HTML')
 print('skills after inserting an element :', skills)
 
 
-# remove() - remove an element from the list
+### remove() - remove an element from the list
 # take value of element as argument 
 # only remove first occurrence
 
@@ -127,7 +127,7 @@ print(' skills before removing an element', skills)
 skills.remove(new_skills)
 print(' skills after removing an element', skills)
 
-# pop() - to remove element from particular index
+### pop() - to remove element from particular index
 # provide the index of an element to remove - pop(4)
 # if no index provide it remove last element from the list
 
@@ -137,6 +137,15 @@ print(' skills before popping an element', skills)
 skills.pop(-5)
 print(' skills after removing an element', skills)
 
+
+### clear() - to empty the list
+
+print(" ====== clear() ======= ")
+numbers = [1, 2, 3, 4, 5]
+
+print("numbers list before clear", numbers)
+numbers.clear()
+print("number after clear", numbers)
 
 
 
