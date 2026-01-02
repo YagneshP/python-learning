@@ -64,3 +64,16 @@ print(slice_nums)
 # for dynamic collection use list
 # for fixed and immutable collection use tuple
 
+##### ====== common method used for Tuple ====== #####
+
+### count() - how many time item appear in tuple
+# - passing element as an argument in count
+# - if found return number (how many times it appeared)
+# - if not return 0
+# - if no argument passed - gives TypeError
+
+
+languages = ("Java", "Python", "Rust", "Go", "Java")
+print(languages.count("Java"))
+print(languages.count("javascript"))
+# languages.count() -  TypeError: tuple.count() takes exactly one argument (0 given)
