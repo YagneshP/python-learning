@@ -55,3 +55,12 @@ print(rest)
 numbers = (1,2,3,4,5,6,7,8)
 slice_nums = numbers[1::2] # using step
 print(slice_nums)
+
+
+# tuple are immutable so deleting any item won't supported , will get TypeError
+# del numbers[3] #TypeError: 'tuple' object doesn't support item deletion
+
+
+# for dynamic collection use list
+# for fixed and immutable collection use tuple
+
