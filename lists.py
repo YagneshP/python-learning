@@ -148,5 +148,21 @@ numbers.clear()
 print("number after clear", numbers)
 
 
+### sort() - use to sort elements in place , means it change the list itself "does not" return new sorted list
+
+print(" ===== sort() ======== ") 
+
+unsorted_numbers = [ 4, 38, 12, 9, -3, 4, 2, 67]
+print(" unsorted_numbers before sort() :", unsorted_numbers)
+unsorted_numbers.sort()
+print(" unsorted_numbers after sort() :", unsorted_numbers)
 
 
+### sorted() - this function take list as an argument and return new iterable object with sorted element
+
+print(" ===== sorted() ======== ") 
+
+unsorted_numbers = [ 4, 38, 12, 9, -3, 4, 2, 67]
+print(" unsorted_numbers before sorted() :", unsorted_numbers)
+sorted_numbers = sorted(unsorted_numbers)
+print(" unsorted_numbers after sorted() which return new iterable object sorted_numbers:", sorted_numbers)
