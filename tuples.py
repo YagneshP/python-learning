@@ -47,3 +47,11 @@ print(name, age,  job)
 name, *rest = developer
 
 print(rest)
+
+
+## slicing tuple [start_index:stop_index:step]
+# works same as list 
+
+numbers = (1,2,3,4,5,6,7,8)
+slice_nums = numbers[1::2] # using step
+print(slice_nums)
