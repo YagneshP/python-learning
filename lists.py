@@ -180,6 +180,7 @@ print("reverse_list after reverse() :", reverse_list)
 
 
 ### index() -- find the first index of element found in list
+# if element not found it give "ValueError"
 
 print(" ====== index() ======== ")
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
