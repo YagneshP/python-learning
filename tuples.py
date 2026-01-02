@@ -77,3 +77,10 @@ languages = ("Java", "Python", "Rust", "Go", "Java")
 print(languages.count("Java"))
 print(languages.count("javascript"))
 # languages.count() -  TypeError: tuple.count() takes exactly one argument (0 given)
+
+### index() - find the index of the element (first occurrence)
+print(languages.index("Java"))
+# - can pass optional start and stop index
+print(languages.index("Java", 1))
+print(languages.index("Java", 1, 5)) # here you can not get index for Java if you pass 4 as stop index because it is not included and "Java" at index 4
+
