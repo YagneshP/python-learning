@@ -45,4 +45,15 @@ while secret_number != guessed_number:
   if(guessed_number != secret_number) :
     print("ohh! you have missed, Try Again")
   
-print(' Saat crore')
+print('Saat crore')
+
+
+
+### break - this statement is use to stop the execution of the loop
+
+items = ['chai', 'milk', 'biscuit', 'crackers', 'fruit', 'butter', 'bread']
+for item in items:
+  if item == 'biscuit':
+    print('Here is your : ' + item)
+    break
+
