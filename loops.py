@@ -57,3 +57,10 @@ for item in items:
     print('Here is your : ' + item)
     break
 
+# continue - skip the current iteration and move to next one
+
+for item in items:
+  if item == 'fruit':
+    continue
+  print(item)
+
