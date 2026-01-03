@@ -84,3 +84,11 @@ print(languages.index("Java"))
 print(languages.index("Java", 1))
 print(languages.index("Java", 1, 5)) # here you can not get index for Java if you pass 4 as stop index because it is not included and "Java" at index 4
 
+### sorted() - function for sorting tuple and return new list 
+# - you can provide 'key' and 'reverse' argument
+
+lang_len_sorted_list = sorted(languages, key=len) # len function (you can pass custom function to sort element)
+print(lang_len_sorted_list)
+
+reverse_list = sorted(languages, key=len,reverse=True) # Try: removing one of the argument and see the result
+print(reverse_list)
