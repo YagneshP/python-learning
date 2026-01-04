@@ -64,3 +64,16 @@ for item in items:
     continue
   print(item)
 
+# else with loop , when loop doesn't break with 'break' statement
+
+words = ['sky', 'apple', 'rhythm', 'fly', 'orange']
+
+for word in words:
+  for letter in word:
+    if letter.lower() in 'aeiou':
+      message = f"'{word}' contains the vowel"
+      print(message)
+      break
+  else:
+    message = f"{word} has no vowel"
+    print(message)
