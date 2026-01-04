@@ -31,3 +31,19 @@ print(range_with_step)
 
 for num in range_with_step:
   print(num) 
+
+
+# range() - it requires at least 1 argument , if you don't pass any you will get TypeError
+# range() # uncomment this and run you will get TypeError
+
+# - it takes only integer as arguments , if you pass float/string it gives you TypeError
+# range(3.4) # uncomment this and run you will get TypeError: 'float' object cannot be interpreted as an integer
+
+
+### Decrement order range
+
+decrement = range(5, 0, -1)
+print(decrement)
+
+for num in decrement:
+  print(num) # notice here: 0 not include because that is stop argument and it start from 5 to 1
