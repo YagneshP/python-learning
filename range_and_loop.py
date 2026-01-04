@@ -47,3 +47,10 @@ print(decrement)
 
 for num in decrement:
   print(num) # notice here: 0 not include because that is stop argument and it start from 5 to 1
+
+
+### list and range
+# - using list() constructor , passing range into it you can create a list
+
+decrement_list = list(decrement)
+print(decrement_list)
