@@ -30,3 +30,7 @@ print("Let's start with 2 now")
 for count, fruit in enumerate(fruits, 2):
   message = f"fruit is at count {count}"
   print(message)
+
+
+
+### zip()
