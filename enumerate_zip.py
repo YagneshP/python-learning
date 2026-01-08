@@ -33,4 +33,14 @@ for count, fruit in enumerate(fruits, 2):
 
 
 
-### zip()
+### zip() - iterate over multiple iterable and return zip object with tuples with pairs of elements.
+
+# zip()
+developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+ids = [1, 2, 3, 4]
+
+for name, id in zip(developers, ids):
+  name = f"{name}"
+  id = f"{id}"
+  print('Name:', name)
+  print('ID:', id)
