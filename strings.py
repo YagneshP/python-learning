@@ -1,7 +1,4 @@
 # with single quote
-from re import M
-
-
 single_quote_string = 'Hello, World!'
 
 # with double quote
@@ -141,6 +138,8 @@ new_str = my_str.upper()
 lowercase_str = new_str.lower()
 
 # strip() - return new string with specified leading and trailing characters removed.
+# lstrip() - remove leading whitespace (left side)
+# rstrip() - remove trailing whitespace (right side)
 # if no argument passed it removes trailing and leading whitespace
 
 my_str = '  hello world '
