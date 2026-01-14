@@ -17,4 +17,11 @@ print(even_numbers)
 # we are using the for loop to iterate over the numbers
 # we are using the if else condition to create the list of tuples
 
+### filter function
 
+def is_long_word(word):
+    return len(word) > 5
+
+words = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape']
+long_words = filter(is_long_word, words) # filter function returns a filter object
+print(list(long_words)) # we are using the list function to convert the filter object to a list
