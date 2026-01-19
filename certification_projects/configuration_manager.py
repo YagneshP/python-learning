@@ -21,3 +21,14 @@ def update_settings(settings, tuple):
   else:
     msg = f"Setting '{key}' does not exist! Cannot update a non-existing setting."
     return msg
+
+def delete_setting(settings, key):
+  key = key.lower()
+  if key in settings:
+    del settings[key]
+    msg = f"Setting '{key}' deleted successfully!"
+    return msg
+  else:
+    msg = "Setting not found!"
+    return msg
+
