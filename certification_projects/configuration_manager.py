@@ -1,4 +1,4 @@
-def add_settings(settings, tuple):
+def add_setting(settings, tuple):
   key, value = tuple
   key = key.lower()
   value = value.lower()
