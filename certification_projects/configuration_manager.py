@@ -32,3 +32,21 @@ def delete_setting(settings, key):
     msg = "Setting not found!"
     return msg
 
+def view_settings(settings):
+  if len(settings) == 0:
+    msg = "No settings available."
+    return msg
+  else:
+    msg = "Current User Settings:\n"
+    for key, value in settings.items():
+      msg += f"{key.capitalize()}: {value}\n"
+    return msg
+
+
+# test_settings = {
+#   "name": "John Doe",
+#   "age": 20,
+#   "email": "john.doe@example.com"
+# }
+
+# print(view_settings(test_settings))
