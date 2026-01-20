@@ -45,4 +45,13 @@ else:
 finally:
   print("This will always execute")
   
-# raise an exception
+# raise an exception with a custom message
+def divide(a, b):
+  if b == 0:
+    raise ValueError("Division by zero is not allowed")
+  return a / b
+
+try:
+  print(divide(10, 0))
+except ValueError as e:
+  print(f"Error: {e}") # this will print the custom message
