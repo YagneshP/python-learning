@@ -1,5 +1,5 @@
-def add_setting(settings, tuple):
-  key, value = tuple
+def add_setting(settings, tup):
+  key, value = tup
   key = key.lower()
   value = value.lower()
   if key in settings:
@@ -7,11 +7,11 @@ def add_setting(settings, tuple):
     return msg
   else:
     settings[key] = value
-    msg = f"Setting '{key}' added successfully with value '{value}'."
+    msg = f"Setting '{key}' added with value '{value}' successfully!"
     return msg
 
-def update_settings(settings, tuple):
-  key, value = tuple
+def update_setting(settings, tup):
+  key, value = tup
   key = key.lower()
   value = value.lower()
   if key in settings:
@@ -43,10 +43,10 @@ def view_settings(settings):
     return msg
 
 
-# test_settings = {
-#   "name": "John Doe",
-#   "age": 20,
-#   "email": "john.doe@example.com"
-# }
+test_settings = {
+  "name": "John Doe",
+  "age": 20,
+  "email": "john.doe@example.com"
+}
 
 # print(view_settings(test_settings))
