@@ -21,3 +21,28 @@ else:
 finally:
   print("This will always execute")
   
+# alias as 
+try:
+  x = int('abc')
+  result = 10 / x
+except ValueError as e:
+  print(f"Error: {e}")
+except ZeroDivisionError as e:
+  print(f"Error: {e}")
+else:
+  print("No error occurred")
+finally:
+  print("This will always execute")
+
+# multiple exceptions with a single except block
+try:
+  x = int(input("Enter a number: "))
+  result = 10 / x
+except (ValueError, ZeroDivisionError) as e:
+  print(f"Error: {e}")
+else:
+  print("No error occurred")
+finally:
+  print("This will always execute")
+  
+# raise an exception
