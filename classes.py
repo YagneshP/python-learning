@@ -38,4 +38,20 @@ print(getattr(person, "gender", "unknown")) # unknown
 
 # getattr(person, "skills") # AttributeError: 'Person' object has no attribute 'skills'
 
+### dir() => used to get the attributes and methods of an object
+# -> syntax: dir(object)
+# -> it will return a list of attributes and methods of the object
+# -> it will not return the attributes and methods of the parent classes
+
+
 ### setattr() => used to set the value of an attribute of an object
+
+# -> syntax: setattr(object, attribute_name, value)
+# -> value is the value to be set for the attribute
+# -> if the attribute is not found, it will create a new attribute with the given value
+# -> if the attribute is found, it will update the value of the attribute
+
+setattr(person, "name", "Jane")
+print(person.name) # Jane
+
+# delattr() => used to delete an attribute of an object
