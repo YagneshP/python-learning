@@ -1,8 +1,7 @@
-
 class Planet:
   def __init__(self, name, planet_type, star):
-    if not isinstance(name, str) and not isinstance(planet_type, str) and not isinstance(star, str):
-      raise TypeError("name, planet_type, and star must be strings")
+    if not (isinstance(name, str) and isinstance(planet_type, str) and isinstance(star, str)):
+      raise TypeError("name, planet type, and star must be strings")
     if not(name and planet_type and star):
       raise ValueError("name, planet_type, and star must be non-empty strings")
     
@@ -21,9 +20,9 @@ planet_1 = Planet('Earth', 'solar', 'Sun')
 planet_2 = Planet('Mercury', 'solar', 'Sun')
 planet_3 = Planet('Mars', 'solar', 'Sun')
 
-print(str(planet_1))
-print(str(planet_2))
-print(str(planet_3))
+print(planet_1)
+print(planet_2)
+print(planet_3)
 
 print(planet_1.orbit())
 print(planet_2.orbit())
