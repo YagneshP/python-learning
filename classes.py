@@ -54,4 +54,7 @@ print(getattr(person, "gender", "unknown")) # unknown
 setattr(person, "name", "Jane")
 print(person.name) # Jane
 
-# delattr() => used to delete an attribute of an object
+### hasattr() => checks if attribute exists , return True or False
+
+# -> syntax: hasattr(object, attribute_name)
+
