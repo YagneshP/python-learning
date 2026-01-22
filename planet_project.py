@@ -15,3 +15,16 @@ class Planet:
   
   def __str__(self):
     return(f"Planet: {self.name} | Type: {self.planet_type} | Star: {self.star}")
+
+
+planet_1 = Planet('Earth', 'solar', 'Sun')
+planet_2 = Planet('Mercury', 'solar', 'Sun')
+planet_3 = Planet('Mars', 'solar', 'Sun')
+
+print(str(planet_1))
+print(str(planet_2))
+print(str(planet_3))
+
+print(planet_1.orbit())
+print(planet_2.orbit())
+print(planet_3.orbit())
