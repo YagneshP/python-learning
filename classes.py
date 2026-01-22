@@ -22,3 +22,20 @@ person.say_hello()
 
 # class keyword is used to define a class
 # class name should be in PascalCase
+
+
+
+### getattr() => used to get the value of an attribute of an object
+
+ # -> syntax: getattr(object, attribute_name, default_value)
+ # -> default_value is optional
+ # -> if the attribute is not found, it will return the default value
+ # -> if the default value is not provided, it will raise an AttributeError
+
+print(getattr(person, "name")) # John
+print(getattr(person, "age")) # 20
+print(getattr(person, "gender", "unknown")) # unknown
+
+# getattr(person, "skills") # AttributeError: 'Person' object has no attribute 'skills'
+
+### setattr() => used to set the value of an attribute of an object
