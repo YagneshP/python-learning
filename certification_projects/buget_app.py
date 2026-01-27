@@ -25,3 +25,15 @@ class Category:
       return False
     else :
       return True
+  
+  def __str__(self):
+    title = "*" * 30
+    midIndex = int(len(title)/2 - len(self.name) / 2)
+
+    first_part_title = title[:midIndex]
+    last_part_title = title[midIndex+len(self.name):]
+    title = first_part_title + self.name + last_part_title
+    return title
+
+food = Category('Food')
+
