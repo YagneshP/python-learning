@@ -13,6 +13,15 @@ class Category:
     if self.check_funds(amount):
       self.ledger.append({'amount' : -amount, 'description': description})
       return True
+    else:
+      False
+  def get_balance(self):
+    balance = 0
+    for dict in self.ledger:
+      balance += dict['amount']
+    return balance
+
+
     
   
   def transfer(self, amount, destination):
@@ -23,9 +32,7 @@ class Category:
     return False
 
   def check_funds(self, amount):
-    balance = 0
-    for dict in self.ledger:
-      balance += dict['amount']
+    balance = self.get_balance()
     if balance < amount or balance == 0:
       return False
     else :
