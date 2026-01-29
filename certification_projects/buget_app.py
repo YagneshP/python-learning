@@ -14,7 +14,7 @@ class Category:
       self.ledger.append({'amount' : -amount, 'description': description})
       return True
     else:
-      False
+      return False
   def get_balance(self):
     balance = 0
     for dict in self.ledger:
@@ -69,11 +69,11 @@ class Category:
     return title + transaction_history
 
 food = Category('Food')
-food.deposit(1000, 'deposit')
-food.withdraw(10.15, 'groceries')
-food.withdraw(15.89, 'restaurant and more food for dessert')
-clothing = Category('Clothing')
-food.transfer(50, clothing)
+food.deposit(900, 'deposit')
+food.withdraw(45.67, 'milk, cereal, eggs, bacon, bread')
+# food.withdraw(15.89, 'restaurant and more food for dessert')
+# clothing = Category('Clothing')
+# food.transfer(50, clothing)
 print(food)
 
 def create_spend_chart(categories):
