@@ -1,6 +1,3 @@
-from email import message
-
-
 class Category:
   def __init__(self, name):
     self.name = name
@@ -52,20 +49,9 @@ class Category:
       amount = f"{transaction['amount']:.2f}"[:7]
       total += transaction['amount']
       transaction_history += f"\n{description}{' '*((23 - len(description))+(7-len(amount)))}{amount}"
-      # 1 .description + 
-      # 2. " " till 23 +
-      # 3. amount   
-      # transaction_history [:23] = description
-      # transaction_history [-1:-7] = amount
-
 
     transaction_history += f"\nTotal: {total}"
 
-      # if(len(description) < 23):
-      #   transaction_history += f"\n{description}{' '*(23 - len(description))}{amount}"
-      # else:
-      #   transaction_history += f"\n{description}{amount}"
-      
     return title + transaction_history
 
 food = Category('Food')
