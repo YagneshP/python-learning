@@ -10,8 +10,10 @@ class Category:
     self.ledger.append({'amount': amount, 'description': description })
 
   def withdraw(self, amount, description=''):
-    self.check_funds(amount)
-    self.ledger.append({'amount' : -amount, 'description': description})
+    if self.check_funds(amount):
+      self.ledger.append({'amount' : -amount, 'description': description})
+      return True
+    
   
   def transfer(self, amount, destination):
     if self.check_funds(amount):
@@ -36,13 +38,13 @@ class Category:
     first_part_title = title[:midIndex]
     last_part_title = title[midIndex+len(self.name):]
     title = first_part_title + self.name + last_part_title
-    transaction_history = ' '*30
+    transaction_history = ''
     total = 0
     for transaction in self.ledger:
       description = transaction['description'][:23]
       amount = f"{transaction['amount']:.2f}"[:7]
       total += transaction['amount']
-      transaction_history += f"\n{description}{" "*(23 - len(description)+(7-len(amount)))}{amount}"
+      transaction_history += f"\n{description}{' '*((23 - len(description))+(7-len(amount)))}{amount}"
       # 1 .description + 
       # 2. " " till 23 +
       # 3. amount   
@@ -67,3 +69,8 @@ clothing = Category('Clothing')
 food.transfer(50, clothing)
 print(food)
 
+def create_spend_chart(categories):
+  title = "Percentage spent by category"
+  # calculate the percentage from withdrawals
+  # total spent for all categories
+  #  
