@@ -1,3 +1,4 @@
+
 class Category:
   def __init__(self, name):
     self.name = name
@@ -57,13 +58,41 @@ class Category:
 food = Category('Food')
 food.deposit(900, 'deposit')
 food.withdraw(45.67, 'milk, cereal, eggs, bacon, bread')
-# food.withdraw(15.89, 'restaurant and more food for dessert')
-# clothing = Category('Clothing')
-# food.transfer(50, clothing)
+clothing = Category('Clothing')
+food.transfer(50, clothing)
+clothing.withdraw(15.89, 'T-shirt')
 print(food)
 
 def create_spend_chart(categories):
-  title = "Percentage spent by category"
-  # calculate the percentage from withdrawals
-  # total spent for all categories
-  #  
+  title = "Percentage spent by category\n"
+  total_spent = 0
+  category_total_spent =[]
+  for category in categories:
+    category_spent = 0
+    for transaction in category.ledger:
+      if transaction['amount'] < 0:
+        category_spent += abs(transaction['amount'])
+        total_spent += abs(transaction['amount'])
+    category_total_spent.append({'name': category.name, 'spent_amount': category_spent})
+  
+  for dictionary in category_total_spent:
+    percentage = (dictionary['spent_amount']/total_spent) * 100
+    dictionary['percentage'] = int((percentage // 10) * 10)
+
+  for num in range(100,-10, -10):
+    if(num < 100 and num > 0):
+      title += f" {str(num)}| "
+    elif(num == 0):
+      title += f"  {str(num)}| "
+    else:
+      title += f"{str(num)}| "
+    for spent_history in category_total_spent:
+      if num <= spent_history['percentage']:
+        title += 'o  '
+    title += "\n"
+  
+  print(total_spent)
+  print(category_total_spent)
+  print(title)
+
+create_spend_chart([food, clothing])
