@@ -67,8 +67,11 @@ def create_spend_chart(categories):
   title = "Percentage spent by category\n"
   total_spent = 0
   category_total_spent =[]
+  longest_category_name = ''
   for category in categories:
     category_spent = 0
+    if len(category.name) >= len(longest_category_name):
+      longest_category_name = category.name
     for transaction in category.ledger:
       if transaction['amount'] < 0:
         category_spent += abs(transaction['amount'])
@@ -90,9 +93,25 @@ def create_spend_chart(categories):
       if num <= spent_history['percentage']:
         title += 'o  '
     title += "\n"
-  
+    
+  title += f"{' '*4}{'-'}{'-'*(len(categories)*2)}{'-'*2}"
+  title += '\n'
+  index = 0
+  while index < len(longest_category_name):
+    title += f"{' '*5}"
+    for category in categories:
+      if index <= (len(category.name) - 1):
+        title += f"{category.name[index]}  "
+      else:
+        title += "   "
+    title += "\n"
+    index += 1
+ 
+
+
   print(total_spent)
+
   print(category_total_spent)
   print(title)
-
+  
 create_spend_chart([food, clothing])
