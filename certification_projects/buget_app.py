@@ -55,13 +55,13 @@ class Category:
 
     return title + transaction_history
 
-food = Category('Food')
-food.deposit(900, 'deposit')
-food.withdraw(45.67, 'milk, cereal, eggs, bacon, bread')
-clothing = Category('Clothing')
-food.transfer(50, clothing)
-clothing.withdraw(15.89, 'T-shirt')
-print(food)
+# food = Category('Food')
+# food.deposit(900, 'deposit')
+# food.withdraw(45.67, 'milk, cereal, eggs, bacon, bread')
+# clothing = Category('Clothing')
+# food.transfer(50, clothing)
+# clothing.withdraw(15.89, 'T-shirt')
+# print(food)
 
 def create_spend_chart(categories):
   title = "Percentage spent by category\n"
@@ -92,6 +92,8 @@ def create_spend_chart(categories):
     for spent_history in category_total_spent:
       if num <= spent_history['percentage']:
         title += 'o  '
+      else:
+        title += "   "
     title += "\n"
     
   title += f"{' '*4}{'-'}{'-'*(len(categories)*2)}{'-'*2}"
@@ -106,12 +108,7 @@ def create_spend_chart(categories):
         title += "   "
     title += "\n"
     index += 1
- 
-
-
-  print(total_spent)
-
-  print(category_total_spent)
-  print(title)
   
-create_spend_chart([food, clothing])
+  return title
+  
+# create_spend_chart([food, clothing])
