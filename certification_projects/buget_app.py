@@ -96,7 +96,7 @@ def create_spend_chart(categories):
         title += "   "
     title += "\n"
     
-  title += f"{' '*4}{'-'}{'-'*(len(categories)*2)}{'-'*2}"
+  title += f"{' '*4}{'-'}{'-'*(len(categories)*3)}"
   title += '\n'
   index = 0
   while index < len(longest_category_name):
