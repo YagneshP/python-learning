@@ -106,7 +106,8 @@ def create_spend_chart(categories):
         title += f"{category.name[index]}  "
       else:
         title += "   "
-    title += "\n"
+    if index != len(longest_category_name) -1 :
+      title += "\n"
     index += 1
   
   return title
