@@ -86,7 +86,7 @@ class GameCharacter:
     print(f"{self.name} leveled up to {self.level}!")
 
   def __str__(self):
-    message = f"Name:{self.name}\nLevel: {self.level}\nHealth: {self.health}\nMana: {self.mana}"
+    message = f"Name: {self.name}\nLevel: {self.level}\nHealth: {self.health}\nMana: {self.mana}"
     return message
 
 
