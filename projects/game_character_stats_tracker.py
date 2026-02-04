@@ -32,22 +32,9 @@
 # The character's current health.
 # The character's current mana.
 
-# For example, a character named Kratos, right after the instantiation, should be represented as the following:
 
-# Name: Kratos
-# Level: 1
-# Health: 100
-# Mana: 50
 
-# hero = GameCharacter('Kratos') # Creates a new character named Kratos
-# print(hero)  # Displays the character's stats
 
-# hero.health -= 30  # Decreases health by 30
-# hero.mana -= 10    # Decreases mana by 10
-# print(hero)  # Displays the updated stats
-
-# hero.level_up()  # Levels up the character
-# print(hero)  # Displays the stats after leveling up
 
 
 
@@ -96,14 +83,29 @@ class GameCharacter:
     self._level += 1
     self.health = 100
     self.mana = 50
-    print(f"{self.nam} leveled up to {self.level}!")
+    print(f"{self.name} leveled up to {self.level}!")
 
   def __str__(self):
-    message = f"""Name:{self.name}
-    Level: {self.level}
-    Health: {self.health}
-    Mana: {self.mana}"""
+    message = f"Name:{self.name}\nLevel: {self.level}\nHealth: {self.health}\nMana: {self.mana}"
     return message
 
-hero = GameCharacter('Kratos') # Creates a new character named Kratos
-print(hero) 
+
+### Testing Code ###
+
+
+# For example, a character named Kratos, right after the instantiation, should be represented as the following:
+
+# Name: Kratos
+# Level: 1
+# Health: 100
+# Mana: 50
+
+# hero = GameCharacter('Kratos') # Creates a new character named Kratos
+# print(hero)  # Displays the character's stats
+
+# hero.health -= 30  # Decreases health by 30
+# hero.mana -= 10    # Decreases mana by 10
+# print(hero)  # Displays the updated stats
+
+# hero.level_up()  # Levels up the character
+# print(hero)  # Displays the stats after leveling up
