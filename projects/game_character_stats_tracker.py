@@ -50,6 +50,7 @@
 # print(hero)  # Displays the stats after leveling up
 
 
+
 class GameCharacter:
   def __init__(self, name):
     self._name = name
@@ -90,3 +91,19 @@ class GameCharacter:
   @property
   def level(self):
     return self._level
+
+  def level_up(self):
+    self._level += 1
+    self.health = 100
+    self.mana = 50
+    print(f"{self.nam} leveled up to {self.level}!")
+
+  def __str__(self):
+    message = f"""Name:{self.name}
+    Level: {self.level}
+    Health: {self.health}
+    Mana: {self.mana}"""
+    return message
+
+hero = GameCharacter('Kratos') # Creates a new character named Kratos
+print(hero) 
