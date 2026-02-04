@@ -73,3 +73,16 @@ class GameCharacter:
       self._health = 100
     else:
       self._health = new_health
+
+  @property
+  def mana(self):
+    return self._mana
+
+  @mana.setter
+  def mana(self, new_mana):
+    if new_mana < 0:
+      self._mana = 0
+    elif new_mana > 50:
+      self._mana = 50
+    else:
+      self._mana = new_mana
