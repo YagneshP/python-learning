@@ -48,3 +48,28 @@
 
 # hero.level_up()  # Levels up the character
 # print(hero)  # Displays the stats after leveling up
+
+
+class GameCharacter:
+  def __init__(self, name):
+    self._name = name
+    self._health = 100
+    self._mana = 50
+    self._level = 1
+
+  @property
+  def name(self):
+    return self._name
+
+  @property
+  def health(self):
+    return self._health
+
+  @health.setter
+  def health(self, new_health):
+    if new_health < 0:
+      self._health = 0
+    elif new_health > 100:
+      self._health = 100
+    else:
+      self._health = new_health
