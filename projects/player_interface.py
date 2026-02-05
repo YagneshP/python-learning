@@ -12,3 +12,15 @@ class Player(ABC):
     self.position = tuple(random_move)
     self.path.append(self.position)
     return self.position
+  
+  @abstractmethod
+  def level_up(self):
+    pass
+
+class Pawn(Player):
+  def __init__(self):
+    super().__init__()
+    self.moves = [(0,1),(0, -1), (-1, 0), (1, 0)]
+
+  def level_up(self):
+    self.moves.extends([(1,1)(1,-1)(-1,-1),(-1,1)])
