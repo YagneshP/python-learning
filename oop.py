@@ -19,5 +19,19 @@ print(jack.name)
 print(jack.sound())
 print(jack.bark)
 
-animal = Animal('Animal')
+# animal = Animal('Animal')
 # print(animal.bark) # Attribute error because back belongs to Dog class
+
+class Cat(Animal):
+  meow = 'meow meow meow'
+
+  def sound(self):
+    base = super().sound()
+    return f'{base}, then {self.name} says {self.meow}' 
+  
+
+def sound(animal):
+  return animal.sound()
+
+print(sound(Dog('Moti')))
+print(sound(Cat('Billi')))
