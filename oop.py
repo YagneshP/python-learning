@@ -9,7 +9,10 @@ class Animal:
   
 class Dog(Animal):
   bark = "Woof Woof Woof!" # class attribute
-
+  #overriding sound method 
+  # comment out below sound method code and see the result
+  def sound(self):
+    return f'{self.name} bark {self.bark}' 
 jack = Dog('Jack')
 print(jack.name)
 print(jack.sound())
