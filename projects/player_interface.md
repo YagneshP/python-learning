@@ -1,10 +1,10 @@
 **User Stories:**
 
-- [ ] You should define an abstract class named `Player` that inherits from the `abc.ABC` class.
-- [ ] The `Player` class should have an `__init__` method that sets:
-  - [ ] The `moves` attribute to an empty list.
-  - [ ] The `position` attribute to `(0, 0)`.
-  - [ ] The `path` attribute to a list containing the initial position.
+- [x] You should define an abstract class named `Player` that inherits from the `abc.ABC` class.
+- [x] The `Player` class should have an `__init__` method that sets:
+  - [x] The `moves` attribute to an empty list.
+  - [x] The `position` attribute to `(0, 0)`.
+  - [x] The `path` attribute to a list containing the initial position.
 - [ ] The `Player` class should have a method named `make_move` that:
   - [ ] Uses `random.choice` to get a random move from the `moves` attribute (defined in the concrete class).
   - [ ] Adds the values from the selected move to the current position and updates the `position` attribute.
