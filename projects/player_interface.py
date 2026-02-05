@@ -9,7 +9,7 @@ class Player(ABC):
   
   def make_move(self):
     random_move = random.choice(self.moves)
-    self.position = tuple(random_move)
+    self.position = tuple(x + y for x, y in zip(self.position, random_move))
     self.path.append(self.position)
     return self.position
   
@@ -23,4 +23,4 @@ class Pawn(Player):
     self.moves = [(0,1),(0, -1), (-1, 0), (1, 0)]
 
   def level_up(self):
-    self.moves.extends([(1,1)(1,-1)(-1,-1),(-1,1)])
+    self.moves.extends([(1,1),(1,-1),(-1,-1),(-1,1)])
