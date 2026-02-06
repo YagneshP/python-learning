@@ -9,3 +9,9 @@ class Rectangle:
   
   def set_height(self, new_height):
     self._height = new_height
+
+  def get_area(self):
+    return self._width * self._height
+  
+  def perimeter(self):
+    return 2 * (self._width + self._height)
