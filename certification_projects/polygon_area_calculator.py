@@ -29,6 +29,11 @@ class Rectangle:
       result += f"{'*' * self._width}\n"
     return result
   
-rect_1 = Rectangle(5, 10)
-
-print(rect_1.get_picture())
+  def get_amount_inside(self, shape):
+    # 1. we check height and width of shape compare to self 
+    # 2. shape.height // self.height and shape.width // self.width and get max value 
+    if self._width > shape._width and self._height > shape._width:
+      return max(self._width // shape._width, self._height // shape._height)
+    return 0
+    
+print(Rectangle(4,8).get_amount_inside(Rectangle(3, 6)))
