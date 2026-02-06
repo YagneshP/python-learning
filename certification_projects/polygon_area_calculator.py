@@ -3,3 +3,9 @@ class Rectangle:
   def __init__(self, width, height):
     self._width = width
     self._height = height
+  
+  def set_width(self, new_width):
+    self._width = new_width
+  
+  def set_height(self, new_height):
+    self._height = new_height
