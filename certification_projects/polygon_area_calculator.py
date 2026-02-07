@@ -30,11 +30,38 @@ class Rectangle:
     return result
   
   def get_amount_inside(self, shape):
-    # 1. we check height and width of shape compare to self 
-    # 2. shape.height // self.height and shape.width // self.width and get max value 
     if self._width > shape._width and self._height > shape._width:
-      return max(self._width // shape._width, self._height // shape._height)
+      return self._width // shape._width * self._height // shape._height
     return 0
     
   def __repr__(self):
-    return f"Rectangle(widht={self._width}, height={self._height})"
+    return f"Rectangle(width={self._width}, height={self._height})"
+
+class Square(Rectangle):
+  def __init__(self, side):
+    super().__init__(side, side)
+
+  def set_width(self, new_side_width):
+    super().set_width(new_side_width)
+    super().set_height(new_side_width)
+    
+  def set_height(self, new_side_height):
+    super().set_width(new_side_height)
+    super().set_height(new_side_height)
+  
+  def set_side(self, side_length):
+    self._width = side_length
+    self._height = side_length
+
+  def __repr__(self):
+    return f"Square(side={self._width})"
+  
+
+# print(Rectangle(4,8).get_amount_inside(Rectangle(3, 6)))
+  
+# sq = Square(9)
+# print(sq.get_area())
+# sq.set_side(4)
+# print(sq.get_diagonal())
+# print(sq)
+# print(sq.get_picture())
