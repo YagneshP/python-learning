@@ -36,4 +36,5 @@ class Rectangle:
       return max(self._width // shape._width, self._height // shape._height)
     return 0
     
-print(Rectangle(4,8).get_amount_inside(Rectangle(3, 6)))
+  def __repr__(self):
+    return f"Rectangle(widht={self._width}, height={self._height})"
