@@ -1,3 +1,5 @@
+import math
+# Iterative approach - O(log n)
 def count_digit_1(n):
   if n == 0:
     return 1
@@ -17,7 +19,7 @@ if __name__ == "__main__":
     print(count_digit_1(n))
 
   
-## Recursive approach
+## Recursive approach - O(log n)
 
 def count_digit_2(n):
    # Base case: if 'n' is single digit
@@ -29,3 +31,13 @@ def count_digit_2(n):
 if __name__ == "__main__":
     n = 58964
     print(count_digit_2(n))
+
+
+# Using log base 10
+
+def count_digit_3(n):
+   return math.floor(math.log10(n) + 1)
+
+if __name__ == '__main__':
+   n = 58964
+   print(count_digit_3(n))
