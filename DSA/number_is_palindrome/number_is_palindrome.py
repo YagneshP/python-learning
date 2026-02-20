@@ -22,6 +22,6 @@ def num_is_palindrome(n):
   return reverse == abs(n)
 
 if __name__ == "__main__":
-  n = 12321
+  n = 14
 
   print(num_is_palindrome(n))
