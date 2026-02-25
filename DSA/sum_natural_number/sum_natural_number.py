@@ -1,11 +1,11 @@
 def sum_of_natural_number(n):
   return n * (n+1) // 2
 
-
+# recursive approach
 def sum_natural_number_recur(n):
-  if n == 1:
+  if n == 1: #base case
     return 1
-  return n + sum_natural_number_recur(n-1)
+  return n + sum_natural_number_recur(n-1) # recursive case
 
 def loop_sum_natural_number(n):
   sum = 0
