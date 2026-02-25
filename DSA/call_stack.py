@@ -1,5 +1,5 @@
 # let understand call stack
-
+# note: here we are not explaining the adding print function on call stack
 def func2(n):
   print("func2 is added to callstack")
   print("we are in func2")
