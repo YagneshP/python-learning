@@ -1,5 +1,5 @@
 def sum_of_digit(n):
-  if n < 10: # the base case is  when there is single digit just return it
+  if n < 10: # the base case is  when there is single digit just return it # i was using n == 0 and return 0 which makes one extra call
     return n
   last_digit = n % 10
   return last_digit + sum_of_digit(n // 10)
